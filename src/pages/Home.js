@@ -11,9 +11,7 @@ const Home = () => {
         <div className="content-wrapper">
           <div className="text-section">
             <h1 className="welcome-title">Welcome to PopX</h1>
-            <p className="lorem-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            </p>
+            <p className="lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
           </div>
 
           <div className="button-section">

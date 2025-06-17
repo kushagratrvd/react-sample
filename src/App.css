@@ -45,6 +45,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 40px 24px 60px 24px;
+  background-color: #f7f8f9;
 }
 
 .text-section {
@@ -114,6 +115,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #f7f8f9;
 }
 
 .form-header {
@@ -352,37 +354,68 @@ body {
   background-color: #f7f8f9;
 }
 
-.profile-header {
-  padding: 40px 24px 24px 24px;
-  text-align: center;
+.profile-settings-header {
   background-color: #ffffff;
+  padding: 24px;
+  border-bottom: 1px solid #f0f0f0;
 }
 
-.profile-image {
-  margin-bottom: 16px;
+.account-settings-title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #1d2226;
+  line-height: 21px;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.profile-content {
+  flex: 1;
+  background-color: #f7f8f9;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-section {
+  padding: 24px;
+  background-color: #f7f8f9;
+}
+
+.profile-info-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.profile-image-container {
   position: relative;
-  display: inline-block;
+  flex-shrink: 0;
 }
 
 .profile-img {
-  width: 80px;
-  height: 80px;
+  width: 76px;
+  height: 76px;
   border-radius: 50%;
   object-fit: cover;
+  display: block;
 }
 
 .profile-icon {
   position: absolute;
-  bottom: 0;
+  bottom: 4px;
   right: 0;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   border: 2px solid #ffffff;
+  display: block;
 }
 
-.profile-info {
-  margin-bottom: 16px;
+.profile-text-info {
+  flex: 1;
 }
 
 .profile-name {
@@ -392,8 +425,7 @@ body {
   color: #1d2226;
   line-height: 19px;
   letter-spacing: 0;
-  text-transform: capitalize;
-  margin-bottom: 4px;
+  margin: 0 0 6px 0;
 }
 
 .profile-email {
@@ -403,7 +435,7 @@ body {
   color: #1d2226;
   line-height: 19px;
   letter-spacing: 0;
-  text-transform: capitalize;
+  margin: 0;
 }
 
 .profile-description {
@@ -413,31 +445,17 @@ body {
   color: #1d2226;
   line-height: 22px;
   letter-spacing: 0;
-  text-transform: capitalize;
-  padding: 0 16px;
+  margin: 0;
   text-align: left;
 }
 
-.profile-divider {
-  height: 1px;
+.profile-divider-dashed {
+  height: 2px;
   background-color: #cbcbcb;
+  border: none;
+  border-top: 2px dashed #cbcbcb;
   margin: 0;
-}
-
-.profile-settings {
-  flex: 1;
-  background-color: #00000007;
-  padding: 24px;
-}
-
-.settings-title {
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  color: #1d2226;
-  line-height: 21px;
-  letter-spacing: 0;
-  text-transform: capitalize;
+  flex-shrink: 0;
 }
 
 /* Responsive adjustments */
