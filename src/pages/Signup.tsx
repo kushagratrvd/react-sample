@@ -32,7 +32,6 @@ const Signup: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Navigate to profile page on successful signup
     navigate("/profile")
   }
 

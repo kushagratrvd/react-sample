@@ -21,7 +21,6 @@ const Login: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Navigate to profile page on login
     navigate("/profile")
   }
 
