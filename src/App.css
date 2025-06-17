@@ -450,12 +450,12 @@ body {
 }
 
 .profile-divider-dashed {
-  height: 2px;
-  background-color: #cbcbcb;
+  height: 0;
   border: none;
   border-top: 2px dashed #cbcbcb;
   margin: 0;
   flex-shrink: 0;
+  width: 100%;
 }
 
 /* Responsive adjustments */
