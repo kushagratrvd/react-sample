@@ -371,9 +371,10 @@ body {
   margin: 0;
 }
 
-.profile-content {
+.profile-content-with-border {
   flex: 1;
   background-color: #f7f8f9;
+  border-bottom: 2px dashed #cbcbcb;
   display: flex;
   flex-direction: column;
 }
@@ -381,6 +382,7 @@ body {
 .profile-section {
   padding: 24px;
   background-color: #f7f8f9;
+  border-bottom: 2px dashed #cbcbcb;
 }
 
 .profile-info-row {
@@ -447,15 +449,6 @@ body {
   letter-spacing: 0;
   margin: 0;
   text-align: left;
-}
-
-.profile-divider-dashed {
-  height: 0;
-  border: none;
-  border-top: 2px dashed #cbcbcb;
-  margin: 0;
-  flex-shrink: 0;
-  width: 100%;
 }
 
 /* Responsive adjustments */

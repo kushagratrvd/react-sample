@@ -7,28 +7,36 @@ const Profile = () => {
           <h1 className="account-settings-title">Account Settings</h1>
         </div>
 
-        {/* Profile Content */}
-        <div className="profile-content">
+        {/* Profile Content with dashed border */}
+        <div className="profile-content-with-border">
           <div className="profile-section">
             {/* Profile Info Row */}
             <div className="profile-info-row">
               <div className="profile-image-container">
                 <img
-                  src="/profile-image.webp"
+                  src={`${process.env.PUBLIC_URL}/profile-image.webp`}
                   alt="Profile"
                   className="profile-img"
                   onError={(e) => {
-                    e.target.src =
-                      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='76' height='76' viewBox='0 0 76 76'%3E%3Ccircle cx='38' cy='38' r='38' fill='%23E5E5E5'/%3E%3Ctext x='38' y='42' text-anchor='middle' fill='%23999' font-size='12'%3EProfile%3C/text%3E%3C/svg%3E"
+                    console.log("WebP failed, trying PNG...")
+                    e.target.src = `${process.env.PUBLIC_URL}/profile-image.png`
+                    e.target.onerror = () => {
+                      console.log("PNG failed, using fallback...")
+                      e.target.src = "https://via.placeholder.com/76x76/E5E5E5/999999?text=Profile"
+                    }
                   }}
                 />
                 <img
-                  src="/purple-icon.webp"
+                  src={`${process.env.PUBLIC_URL}/purple-icon.webp`}
                   alt="Camera"
                   className="profile-icon"
                   onError={(e) => {
-                    e.target.src =
-                      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='10' fill='%236C25FF'/%3E%3C/svg%3E"
+                    console.log("Icon WebP failed, trying PNG...")
+                    e.target.src = `${process.env.PUBLIC_URL}/purple-icon.png`
+                    e.target.onerror = () => {
+                      console.log("Icon PNG failed, using fallback...")
+                      e.target.src = "https://via.placeholder.com/20x20/6C25FF/FFFFFF?text=📷"
+                    }
                   }}
                 />
               </div>
@@ -45,9 +53,6 @@ const Profile = () => {
               Et Dolore Magna Aliquyam Erat, Sed Diam
             </p>
           </div>
-
-          {/* Dashed Divider */}
-          <div className="profile-divider-dashed"></div>
         </div>
       </div>
     </div>
