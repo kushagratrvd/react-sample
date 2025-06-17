@@ -2,26 +2,27 @@
 
 A pixel-perfect React.js application built for interview assessment.
 
-## Features
+## Live Demo
+- **GitHub Repository**: [Add your repo URL here]
+- **Live Site**: [Add your deployed URL here]
 
+## Features
 - 4 responsive pages: Home, Login, Signup, Profile
 - Exact design implementation with Rubik font
 - Mobile-first design (375x812 viewport)
 - React Router for navigation
-- TypeScript support
+- Pixel-perfect styling
 
-## Getting Started
+## Local Development
 
 ### Prerequisites
-
 - Node.js (version 14 or higher)
-- npm or yarn
+- npm
 
 ### Installation
-
 1. Clone the repository
 \`\`\`bash
-git clone <your-repo-url>
+git clone [your-repo-url]
 cd popx-react-app
 \`\`\`
 
@@ -30,65 +31,56 @@ cd popx-react-app
 npm install
 \`\`\`
 
-3. Start the development server
+3. Start development server
 \`\`\`bash
 npm start
 \`\`\`
 
-4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4. Open [http://localhost:3000](http://localhost:3000)
 
 ## Build for Production
-
 \`\`\`bash
 npm run build
 \`\`\`
 
-This builds the app for production to the `build` folder.
-
 ## Deployment
 
-This app is configured for deployment on Vercel, Netlify, or similar platforms.
+### Vercel
+1. Push to GitHub
+2. Import project in Vercel
+3. Deploy automatically
 
-### Vercel Deployment
-
-1. Install Vercel CLI: `npm i -g vercel`
-2. Run: `vercel`
-3. Follow the prompts
-
-### Manual Deployment
-
-1. Run `npm run build`
-2. Upload the `build` folder to your hosting service
+### Netlify
+1. Run \`npm run build\`
+2. Upload \`build\` folder to Netlify
+3. Set redirects for SPA routing
 
 ## Project Structure
-
 \`\`\`
 src/
   pages/
-    Home.tsx
-    Login.tsx
-    Signup.tsx
-    Profile.tsx
-  App.tsx
+    Home.js
+    Login.js  
+    Signup.js
+    Profile.js
+  App.js
   App.css
-  index.tsx
+  index.js
 public/
   index.html
   profile-image.png
+  _redirects
 \`\`\`
 
-## Technologies Used
-
+## Technologies
 - React 18
-- TypeScript
 - React Router DOM
 - CSS3 with Rubik font
 - Create React App
 
 ## Design Specifications
-
 - Background: #F7F8F9
-- Primary Blue: #6C25FF
+- Primary Blue: #6C25FF  
 - Text Color: #1D2226
 - Border Color: #CBCBCB
 - Font: Rubik (Regular, Medium)
