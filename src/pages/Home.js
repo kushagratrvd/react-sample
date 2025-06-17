@@ -1,9 +1,8 @@
 "use client"
 
-import type React from "react"
 import { useNavigate } from "react-router-dom"
 
-const Home: React.FC = () => {
+const Home = () => {
   const navigate = useNavigate()
 
   return (

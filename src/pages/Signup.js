@@ -1,10 +1,9 @@
 "use client"
 
-import type React from "react"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 
-const Signup: React.FC = () => {
+const Signup = () => {
   const navigate = useNavigate()
   const [formData, setFormData] = useState({
     fullName: "",
@@ -15,7 +14,7 @@ const Signup: React.FC = () => {
     isAgency: "yes",
   })
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (e) => {
     const { name, value } = e.target
     setFormData((prev) => ({
       ...prev,
@@ -23,14 +22,14 @@ const Signup: React.FC = () => {
     }))
   }
 
-  const handleRadioChange = (value: string) => {
+  const handleRadioChange = (value) => {
     setFormData((prev) => ({
       ...prev,
       isAgency: value,
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     navigate("/profile")
   }

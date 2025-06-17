@@ -1,6 +1,4 @@
-import type React from "react"
-
-const Profile: React.FC = () => {
+const Profile = () => {
   return (
     <div className="page-container">
       <div className="mobile-container profile-container">
