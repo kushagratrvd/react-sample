@@ -5,6 +5,7 @@ const Profile = () => {
         <div className="profile-header">
           <div className="profile-image">
             <img src="/profile-image.png" alt="Profile" className="profile-img" />
+            <img src="/purple-icon.png" alt="Icon" className="profile-icon" />
           </div>
 
           <div className="profile-info">
@@ -13,8 +14,8 @@ const Profile = () => {
           </div>
 
           <p className="profile-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
+            Lorem Ipsum Dolor Sit Amet, Consectetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore
+            Et Dolore Magna Aliquyam Erat, Sed Diam
           </p>
         </div>
 
