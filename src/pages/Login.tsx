@@ -1,0 +1,81 @@
+"use client"
+
+import type React from "react"
+import { useState } from "react"
+import { useNavigate } from "react-router-dom"
+
+const Login: React.FC = () => {
+  const navigate = useNavigate()
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  })
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }))
+  }
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    // Navigate to profile page on login
+    navigate("/profile")
+  }
+
+  return (
+    <div className="page-container">
+      <div className="mobile-container">
+        <div className="form-wrapper">
+          <div className="form-header">
+            <h1 className="form-title">
+              Signin to your
+              <br />
+              PopX account
+            </h1>
+            <p className="form-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+          </div>
+
+          <form onSubmit={handleSubmit} className="login-form">
+            <div className="form-group">
+              <label className="form-label">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                placeholder="Enter email address"
+                className="form-input"
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label className="form-label">Password</label>
+              <input
+                type="password"
+                name="password"
+                value={formData.password}
+                onChange={handleInputChange}
+                placeholder="Enter password"
+                className="form-input"
+                required
+              />
+            </div>
+
+            <button type="submit" className="login-submit-btn">
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Login
