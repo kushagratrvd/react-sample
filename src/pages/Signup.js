@@ -107,21 +107,24 @@ const Signup = () => {
               />
             </div>
 
-            <div className="form-group">
-              <label className="signup-label">Company name</label>
-              <input
-                type="text"
-                name="companyName"
-                value={formData.companyName}
-                onChange={handleInputChange}
-                placeholder="Marry Doe"
-                className="signup-input"
-              />
-            </div>
+            <div className="form-group-group">
+              <div className="form-group">
+                <label className="signup-label">Company name</label>
+                <input
+                  type="text"
+                  name="companyName"
+                  value={formData.companyName}
+                  onChange={handleInputChange}
+                  placeholder="Marry Doe"
+                  className="signup-input"
+                />
+              </div>
 
-            <div className="form-group">
-              <label className="agency-label">Are you an Agency?</label>
-              <div className="radio-group">
+              <div className="form-group no-gap">
+                <label className="agency-label">
+                  Are you an Agency?<span className="required">*</span>
+                </label>
+                <div className="radio-group">
                 <label className="radio-option">
                   <input
                     type="radio"
@@ -147,6 +150,7 @@ const Signup = () => {
                   <span className="radio-text">No</span>
                 </label>
               </div>
+            </div>
             </div>
 
             <button type="submit" className="signup-submit-btn">

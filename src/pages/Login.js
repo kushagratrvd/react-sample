@@ -45,7 +45,7 @@ const Login = () => {
                 value={formData.email}
                 onChange={handleInputChange}
                 placeholder="Enter email address"
-                className="form-input"
+                className="form-input1"
                 required
               />
             </div>
@@ -58,7 +58,7 @@ const Login = () => {
                 value={formData.password}
                 onChange={handleInputChange}
                 placeholder="Enter password"
-                className="form-input"
+                className="form-input2"
                 required
               />
             </div>
