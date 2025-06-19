@@ -13,32 +13,33 @@ const Profile = () => {
             {/* Profile Info Row */}
             <div className="profile-info-row">
               <div className="profile-image-container">
-                <img
-                  src={`${process.env.PUBLIC_URL}/profile-image.webp`}
-                  alt="Profile"
+                {/* Profile Image with SVG fallback */}
+                <svg
                   className="profile-img"
-                  onError={(e) => {
-                    console.log("WebP failed, trying PNG...")
-                    e.target.src = `${process.env.PUBLIC_URL}/profile-image.png`
-                    e.target.onerror = () => {
-                      console.log("PNG failed, using fallback...")
-                      e.target.src = "https://via.placeholder.com/76x76/E5E5E5/999999?text=Profile"
-                    }
-                  }}
-                />
-                <img
-                  src={`${process.env.PUBLIC_URL}/purple-icon.webp`}
-                  alt="Camera"
+                  width="76"
+                  height="76"
+                  viewBox="0 0 76 76"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="38" cy="38" r="38" fill="#E5E5E5" />
+                  <circle cx="38" cy="30" r="12" fill="#999999" />
+                  <path d="M20 60c0-10 8-18 18-18s18 8 18 18" fill="#999999" />
+                </svg>
+
+                {/* Camera Icon */}
+                <svg
                   className="profile-icon"
-                  onError={(e) => {
-                    console.log("Icon WebP failed, trying PNG...")
-                    e.target.src = `${process.env.PUBLIC_URL}/purple-icon.png`
-                    e.target.onerror = () => {
-                      console.log("Icon PNG failed, using fallback...")
-                      e.target.src = "https://via.placeholder.com/20x20/6C25FF/FFFFFF?text=📷"
-                    }
-                  }}
-                />
+                  width="21"
+                  height="23"
+                  viewBox="0 0 21 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="10.5" cy="11.5" r="10.5" fill="#6C25FF" />
+                  <path d="M7 9h7v6H7V9z" fill="white" />
+                  <circle cx="10.5" cy="12" r="2" fill="#6C25FF" />
+                </svg>
               </div>
 
               <div className="profile-text-info">

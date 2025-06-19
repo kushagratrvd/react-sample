@@ -125,32 +125,32 @@ const Signup = () => {
                   Are you an Agency?<span className="required">*</span>
                 </label>
                 <div className="radio-group">
-                <label className="radio-option">
-                  <input
-                    type="radio"
-                    name="isAgency"
-                    value="yes"
-                    checked={formData.isAgency === "yes"}
-                    onChange={() => handleRadioChange("yes")}
-                    className="radio-input"
-                  />
-                  <span className="radio-custom"></span>
-                  <span className="radio-text">Yes</span>
-                </label>
-                <label className="radio-option">
-                  <input
-                    type="radio"
-                    name="isAgency"
-                    value="no"
-                    checked={formData.isAgency === "no"}
-                    onChange={() => handleRadioChange("no")}
-                    className="radio-input"
-                  />
-                  <span className="radio-custom"></span>
-                  <span className="radio-text">No</span>
-                </label>
+                  <label className="radio-option">
+                    <input
+                      type="radio"
+                      name="isAgency"
+                      value="yes"
+                      checked={formData.isAgency === "yes"}
+                      onChange={() => handleRadioChange("yes")}
+                      className="radio-input"
+                    />
+                    <span className="radio-custom"></span>
+                    <span className="radio-text">Yes</span>
+                  </label>
+                  <label className="radio-option">
+                    <input
+                      type="radio"
+                      name="isAgency"
+                      value="no"
+                      checked={formData.isAgency === "no"}
+                      onChange={() => handleRadioChange("no")}
+                      className="radio-input"
+                    />
+                    <span className="radio-custom"></span>
+                    <span className="radio-text">No</span>
+                  </label>
+                </div>
               </div>
-            </div>
             </div>
 
             <button type="submit" className="signup-submit-btn">

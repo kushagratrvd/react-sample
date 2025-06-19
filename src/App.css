@@ -60,7 +60,7 @@ body {
   line-height: 17px;
   letter-spacing: 0;
   width: 231px;
-height: 33px;
+  height: 33px;
 }
 
 .lorem-text {
@@ -71,7 +71,7 @@ height: 33px;
   line-height: 26px;
   letter-spacing: 0;
   width: 232px;
-height: 48px;
+  height: 48px;
 }
 
 .button-section {
@@ -206,19 +206,19 @@ height: 48px;
 }
 
 .form-input1 {
-    width: 100%;
-    height: 40px;
-    border: 1px solid #cbcbcb;
-    border-radius: 8px;
-    padding: 0 16px;
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #1d2226;
-    line-height: 17px;
-    letter-spacing: 0;
-    background-color: #f7f8f9;
-    margin-bottom: 13px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #cbcbcb;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1d2226;
+  line-height: 17px;
+  letter-spacing: 0;
+  background-color: #f7f8f9;
+  margin-bottom: 13px;
 }
 
 .form-input::placeholder {
@@ -317,8 +317,6 @@ height: 48px;
 .no-gap {
   margin-bottom: 0 !important;
 }
-
-
 
 .radio-group {
   display: flex;
@@ -425,8 +423,8 @@ height: 48px;
 }
 
 .profile-section {
-    background-color: #f7f8f9;
-    border-bottom: 2px dashed #cbcbcb;
+  background-color: #f7f8f9;
+  border-bottom: 2px dashed #cbcbcb;
 }
 
 .profile-info-row {
@@ -474,7 +472,7 @@ height: 48px;
   letter-spacing: 0;
   margin: 0 0 6px 0;
   width: 73px;
-    height: 18px;
+  height: 18px;
 }
 
 .profile-email {
@@ -486,7 +484,7 @@ height: 48px;
   letter-spacing: 0;
   margin: 0;
   width: 118px;
-height: 17px;
+  height: 17px;
 }
 
 .profile-description {

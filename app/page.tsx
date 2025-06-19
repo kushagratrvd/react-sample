@@ -1,7 +1,7 @@
-import Home from "../src/pages/Home"
+"use client"
 
-const Page = () => {
-  return <Home />
+import  from "../src/index"
+
+export default function SyntheticV0PageForDeployment() {
+  return < />
 }
-
-export default Page
