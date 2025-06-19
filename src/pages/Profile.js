@@ -2,18 +2,14 @@ const Profile = () => {
   return (
     <div className="page-container">
       <div className="mobile-container profile-container">
-        {/* Account Settings Header */}
         <div className="profile-settings-header">
           <h1 className="account-settings-title">Account Settings</h1>
         </div>
 
-        {/* Profile Content with dashed border */}
         <div className="profile-content-with-border">
           <div className="profile-section">
-            {/* Profile Info Row */}
             <div className="profile-info-row">
               <div className="profile-image-container">
-                {/* Profile Image with SVG fallback */}
                 <svg
                   className="profile-img"
                   width="76"
@@ -27,7 +23,6 @@ const Profile = () => {
                   <path d="M20 60c0-10 8-18 18-18s18 8 18 18" fill="#999999" />
                 </svg>
 
-                {/* Camera Icon */}
                 <svg
                   className="profile-icon"
                   width="21"
@@ -48,7 +43,6 @@ const Profile = () => {
               </div>
             </div>
 
-            {/* Description */}
             <p className="profile-description">
               Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore
               Et Dolore Magna Aliquyam Erat, Sed Diam
